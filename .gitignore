@@ -1,0 +1,18 @@
+# Version Tracking Ignore Rules for Git VCS for Version Control System for $HOME
+# This somehow makes the output of `vcsh <repo> status` slightly cleaner by removing this that will never be tracked.
+# Though the `vcsh status` and `vcsh write-gitignore` commands kinda defeat its purpose...
+# https://git-scm.com/docs/gitignore
+# vcsh(1) manual page
+
+## Nothing useful in cache folder ##
+/.cache/
+
+## Every non-hidden folders is considered not valuable ##
+/*/
+
+## No log files please ##
+/*.log
+
+## No backup files please ##
+/*.old
+/*.bak*
